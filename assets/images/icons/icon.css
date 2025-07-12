@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-openAI{
+    mask-image: url(openAI.svg);
+    -webkit-mask-image: url(openAI.svg);
+}
+
+.icon-stars{
+    mask-image: url(stars.svg);
+    -webkit-mask-image: url(stars.svg);
+}
+.icon-generate{
+    mask-image: url(generate.svg);
+    -webkit-mask-image: url(generate.svg);
+}
+.icon-monitor{
+    mask-image: url(monitor.svg);
+    -webkit-mask-image: url(monitor.svg);
+}
+.icon-tv{
+    mask-image: url(tv.svg);
+    -webkit-mask-image: url(tv.svg);
+}
+.icon-pen-tool{
+    mask-image: url(pen-tool.svg);
+    -webkit-mask-image: url(pen-tool.svg);
+}
+.icon-settings{
+    mask-image: url(settings.svg);
+    -webkit-mask-image: url(settings.svg);
+}
