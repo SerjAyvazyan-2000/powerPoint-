@@ -9,6 +9,13 @@
     flex-shrink: 0;
 
 }
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .footer {
+        padding-bottom: calc(env(safe-area-inset-bottom) + 60px);
+    }
+}
+
+
 .footer-left-blur{
     position: absolute;
     left: 0;
