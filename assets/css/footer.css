@@ -205,6 +205,9 @@
         height: 120px;
         margin: 49px auto 0;
     }
+    .footer-carousel img{
+        height: 120px;
+    }
     .footer-bg {
          height: unset;
         top: 100px;

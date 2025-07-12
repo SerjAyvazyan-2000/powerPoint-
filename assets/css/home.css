@@ -1401,8 +1401,31 @@
     .hero-carousel {
         justify-content: stretch;
         overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--orange) transparent;
 
     }
+
+    .hero-carousel::-webkit-scrollbar {
+        height: 4px;
+    }
+
+
+    .hero-carousel::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .hero-carousel::-webkit-scrollbar-thumb {
+        background: #FE662D;
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .hero-carousel::-webkit-scrollbar-thumb:hover {
+        background: #ff814c;
+    }
+
+
     .services-body{
         flex-direction: column;
         gap: 40px;
@@ -1910,6 +1933,9 @@
         position: relative;
         z-index: 3;
     }
+    .hero-bg{
+        height: 400px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1926,6 +1952,7 @@
     .advantages-blur-two {
         right: 0;
     }
+
 
     .for-whom-media {
         height: 207px;
