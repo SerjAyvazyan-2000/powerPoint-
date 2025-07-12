@@ -6,6 +6,8 @@
     position: relative;
     z-index: 2;
     border-top: 1px solid var(--gray);
+    flex-shrink: 0;
+
 }
 .footer-left-blur{
     position: absolute;
@@ -77,6 +79,8 @@
     width: 100%;
     position: relative;
     z-index: 2;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 
 }
 .footer-carousel img{
