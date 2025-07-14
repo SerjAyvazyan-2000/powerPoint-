@@ -100,7 +100,7 @@
 .hero-carousel-item {
     max-width: 598px;
     min-width: 598px;
-
+    border-radius: 20px;
     width: 100%;
     height: 336px;
     box-shadow: 10px 8px 29px 0px #00000096,
@@ -881,7 +881,8 @@
     line-height: 111%;
     color: var(--gray3);
 }
-.services-section{
+
+.services-section {
     margin-top: 192px;
 }
 
@@ -892,7 +893,7 @@
     z-index: 2;
 }
 
-.services-animate-blur{
+.services-animate-blur {
     position: absolute;
     top: 360px;
     right: 380px;
@@ -1041,7 +1042,6 @@
     position: relative;
     z-index: 2;
     border: 1px solid var(--gray);
-    box-shadow: 0 4px 4px 0 var(--gray5);
 
 }
 
@@ -1208,7 +1208,8 @@
     z-index: 2;
     max-width: 904px;
 }
-.trust-body{
+
+.trust-body {
     position: relative;
     z-index: 3;
 }
@@ -1329,11 +1330,13 @@
         align-items: stretch;
 
     }
+
     .advantages-media {
         right: -100px;
         bottom: 70px;
         z-index: -1;
     }
+
     .technology-column {
         flex-direction: column-reverse;
 
@@ -1363,7 +1366,6 @@
         align-items: stretch;
         gap: 550px;
     }
-
 
 
     .advantages-media-info {
@@ -1426,11 +1428,12 @@
     }
 
 
-    .services-body{
+    .services-body {
         flex-direction: column;
         gap: 40px;
     }
-    .services-media{
+
+    .services-media {
         margin-top: 17px;
     }
 
@@ -1448,6 +1451,7 @@
         bottom: -50px;
         left: 0;
     }
+
     .services-animate-decor {
         top: 100px;
         right: -30px;
@@ -1462,7 +1466,8 @@
 
 
     }
-    .advantages-media{
+
+    .advantages-media {
         min-width: 903px;
     }
 
@@ -1495,11 +1500,13 @@
         margin: 41px auto 0;
         padding: 0;
     }
-    .services-media-items{
+
+    .services-media-items {
         margin: 0 auto;
         gap: 22px;
         justify-content: center;
     }
+
     .hero-carousel-item {
         max-width: 211px;
         min-width: 211px;
@@ -1509,7 +1516,9 @@
         32.54px 25.11px 24.76px 0px #0000004D,
         58.01px 44.92px 29.36px 0px #00000017,
         90.9px 70.03px 32.19px 0px #00000003;
+        border-radius: 7px;
     }
+
     .services-media-bg {
         left: -20px;
         width: 120%;
@@ -1517,7 +1526,8 @@
         height: 358px;
         bottom: 102px;
     }
-    .services-media-bg img{
+
+    .services-media-bg img {
         width: 100%;
     }
 
@@ -1530,6 +1540,7 @@
         height: 162px;
         bottom: 110px;
     }
+
     .trust-carousel-decor {
         height: 162px;
         bottom: 15px;
@@ -1608,7 +1619,6 @@
     }
 
 
-
     .advantages-stars {
         max-width: 322px;
         right: 0;
@@ -1662,7 +1672,8 @@
     .technology-animate-item {
         margin-bottom: 40px;
     }
-    .advantages-media{
+
+    .advantages-media {
         right: -200px;
     }
 
@@ -1796,10 +1807,12 @@
     .advantages-section {
         margin-top: 100px;
     }
-    .services-section{
+
+    .services-section {
         margin-top: 100px;
 
     }
+
     .technology-item-descr {
         margin-top: 0;
     }
@@ -1826,7 +1839,8 @@
         font-size: 13px;
 
     }
-    .service-item-icon i{
+
+    .service-item-icon i {
         font-size: 19px;
     }
 
@@ -1834,6 +1848,7 @@
         width: 56px;
         height: 56px;
     }
+
     .service-item {
         border-radius: 17px;
         max-width: 148px;
@@ -1841,62 +1856,77 @@
         min-height: 152px;
 
     }
-    .service-item p{
+
+    .service-item p {
         font-size: 11.99px;
         line-height: 120%;
         margin-top: 17px;
 
     }
-    .services-btn{
+
+    .services-btn {
         margin: 0 auto;
     }
-    .for-whom-section .small-container{
+
+    .for-whom-section .small-container {
         padding: 0 20px;
     }
-    .services-text{
+
+    .services-text {
         margin-top: 20px;
         max-width: 320px;
     }
+
     .services-info-item ul {
         margin-top: 20px;
     }
+
     .services-info-item li {
         font-size: 13px;
         line-height: 130%;
         max-width: 227px;
     }
+
     .services-animate-decor {
         max-width: 136px;
     }
-    .services-animate-blur{
+
+    .services-animate-blur {
         position: absolute;
         top: 40px;
         right: -30px;
         z-index: 2;
 
     }
-    .faq-section{
+
+    .faq-section {
         margin-top: 100px;
     }
-    .faq-titles p{
+
+    .faq-titles p {
         font-size: 13px;
     }
+
     .faq-items {
         gap: 10px;
         margin: 40px auto 0;
     }
-    .faq-section .container{
+
+    .faq-section .container {
         padding: 0 20px;
     }
-    .faq-item{
+
+    .faq-item {
         padding: 20px;
     }
-    .faq-item-header p{
+
+    .faq-item-header p {
         font-size: 13px;
         max-width: 220px;
 
     }
-    .faq-item-sub p{
+
+    .faq-item-sub p {
         font-size: 13px;
         max-width: 280px;
 
@@ -1906,11 +1936,13 @@
     .trust-bg-right {
         bottom: -20px;
     }
+
     .trust-bg-left {
         bottom: -20px;
 
     }
-    .trust-carousel{
+
+    .trust-carousel {
         min-height: 162px;
     }
 
@@ -1918,22 +1950,26 @@
         font-size: 30px;
         margin-bottom: 23px;
     }
-    .trust-body b{
+
+    .trust-body b {
         font-size: 13px;
         max-width: 240px;
     }
+
     .trust-carousel {
         margin: 55px auto 0;
         gap: 20px;
         padding: 0;
     }
-    .trust-btn{
-        margin: 29px auto  0 ;
+
+    .trust-btn {
+        margin: 29px auto 0;
         max-width: max-content;
         position: relative;
         z-index: 3;
     }
-    .hero-bg{
+
+    .hero-bg {
         height: 400px;
     }
 }
@@ -1958,7 +1994,8 @@
         height: 207px;
 
     }
-    .advantages-media{
+
+    .advantages-media {
         right: -230px;
     }
 }

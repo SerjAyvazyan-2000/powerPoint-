@@ -291,6 +291,8 @@ const btns = document.querySelectorAll('.animate-btn');
 
 btns.forEach((btn) => {
     const icon = btn.querySelector('.animate-btn-icon');
+    const text = btn.querySelector('p');
+    const originalText = text.textContent;
 
     let hovered = false;
 
@@ -302,7 +304,6 @@ btns.forEach((btn) => {
         const moveX = btnWidth - iconWidth - 16;
 
         let step1Done = false;
-        let step2Done = false;
         let step3Done = false;
 
         const tween = gsap.to(icon, {
@@ -318,16 +319,9 @@ btns.forEach((btn) => {
                     step1Done = true;
                 }
 
-                if (progress > 0.5 && !step2Done) {
-                    btn.classList.add('step-2');
-
-                    step2Done = true;
-
-                }
-
                 if (progress > 0.9 && !step3Done) {
                     btn.classList.add('step-3');
-                    icon.classList.add('active');
+                    text.textContent = 'PowerPoint онлайн';
                     step3Done = true;
                 }
             },
@@ -338,15 +332,12 @@ btns.forEach((btn) => {
                     duration: 1.5,
                     ease: "power2.inOut",
                     onStart: () => {
-                        btn.classList.remove('step-1', 'step-2');
+                        btn.classList.remove('step-1');
                         icon.classList.remove('active');
-                        step1Done = false;
-                        step2Done = false;
-                        step3Done = false;
                     },
                     onComplete: () => {
                         btn.classList.remove('step-3');
-
+                        text.textContent = originalText;
                     }
                 });
             }
@@ -356,14 +347,10 @@ btns.forEach((btn) => {
     btn.addEventListener('mouseenter', () => {
         hovered = true;
         gsap.killTweensOf(icon);
-        gsap.to(icon, {
-            x: 0,
-            rotation: 0,
-            duration: 0.5,
-            ease: "power2.out"
-        });
-        btn.classList.remove('step-1', 'step-2', 'step-3');
+        gsap.to(icon, { x: 0, rotation: 0, duration: 0.5 });
+        btn.classList.remove('step-1', 'step-3');
         icon.classList.remove('active');
+        text.textContent = originalText;
     });
 
     btn.addEventListener('mouseleave', () => {
@@ -371,9 +358,8 @@ btns.forEach((btn) => {
     });
 
     runAnimation();
-    setInterval(runAnimation, 5000);
+    setInterval(runAnimation, 6000);
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const animationMap = {

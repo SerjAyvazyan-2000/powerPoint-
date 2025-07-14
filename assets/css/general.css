@@ -99,6 +99,9 @@ main {
     flex: 0 0 56px;
     background: radial-gradient(183.81% 220.09% at 18.23% -40.51%, #FFDAA3 0%, #FD662C 46.78%, #691616 100%);
     box-shadow: 0 0 26px -5px var(--black3);
+    position: relative;
+    z-index: 3;
+
 
 }
 .animate-btn::before {
@@ -116,29 +119,30 @@ main {
     opacity: 1;
 }
 
-.animate-btn.step-2::before {
-    background: linear-gradient(268.33deg, #FFFFFF 5.16%, #FE662D 127.51%);
-    opacity: 1;
-}
-.animate-btn > * {
-    position: relative;
-    z-index: 1;
-}
+
 .animate-btn.step-3::before {
     background: var(--orange);
     opacity: 1;
 }
 .animate-btn:hover{
     background: var(--orange);
+    color: var(--white);
 
 }
+.animate-btn:hover p{
+    color: var(--white);
 
+}
 .animate-btn p {
     font-weight: 400;
     font-size: 15px;
     line-height: 100%;
     color: var(--black);
     text-align: center;
+    position: relative;
+    z-index: 2;
+    transition:  0.5s ;
+
 }
 
 .icon-stars {
